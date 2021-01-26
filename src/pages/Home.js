@@ -7,10 +7,8 @@ import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import Link from '@material-ui/core/Link';
-import Chart from '../components/Chart';
-import Deposits from '../components/Deposits';
-import Orders from '../components/Orders';
 import Services from '../containers/Services';
+import BannerMain from '../components/BannerMain'
 
 function Copyright() {
   return (
@@ -109,7 +107,6 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Home() {
   const classes = useStyles();
-  const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
 
   return (
     <>
@@ -119,15 +116,14 @@ export default function Home() {
           <Grid container spacing={3}>
             {/* Chart */}
             <Grid item xs={12}>
-              <Services />
-            </Grid>
-         
-            <Grid item xs={12}>
-              <Paper className={classes.paper}>
-               
-              </Paper>
+              <BannerMain />
             </Grid>
           </Grid>
+          <Grid item xs={12}>
+              <Paper className={classes.paper}>
+                <Services />
+              </Paper>
+            </Grid>
           <Box pt={4}>
             <Copyright />
           </Box>
