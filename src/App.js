@@ -11,6 +11,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
   },
 }))
+
 function App() {
   const classes = useStyles()
   return (
