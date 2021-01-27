@@ -113,12 +113,11 @@ export default function Home() {
       <main className={classes.content}>
         <div className={classes.appBarSpacer} />
         <Container className={classes.container}>
-          <Grid container spacing={3}>
+         
             {/* Chart */}
             <Grid item xs={12}>
               <BannerMain />
             </Grid>
-          </Grid>
           <Grid item xs={12}>
               <Paper className={classes.paper}>
                 <Services />
