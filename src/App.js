@@ -1,17 +1,21 @@
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 import Home from './pages/Home'
 import Dashboard from './pages/Dashboard'
 
 import './App.css';
-import Header from './containers/header/Header';
-
+import HeaderMain from './containers/headermain/HeaderMain';
+import HeaderMobile from './containers/headermobile/HeaderMobile';
 function App() {
-  
+
+  const matches = useMediaQuery('(max-width:600px)');
+
   return (
     <div>
-      <Header />
+      {matches ? <HeaderMobile />: <HeaderMain />}
+      
       <div>
         <Router>
           <Routes>

@@ -1,0 +1,19 @@
+.list-group li {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    zoom: 1;
+    transform-origin: 50% 100%;
+    transform: perspective(1000px) rotate3d(1, 0, 0, 90deg);
+  }
+  .list-group li:nth-child(even) {
+    transform-origin: 50% 0%;
+    background: #eee;
+  }
+  .list-group li:last-child {
+    transform: none;
+  }
+  .list-group li .navbar-toggler-icon {
+    cursor: pointer;
+  }
+  

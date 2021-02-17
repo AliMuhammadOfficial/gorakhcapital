@@ -15,15 +15,20 @@ const useStyles = makeStyles((theme) => ({
     zIndex: 999,
     width: "100%"
   },
-  menuButtons: {
-    marginRight: "300px"
+  menuButton: {
+    // marginRight: theme.spacing(2),
+  },
+  menu: {
+    flexGrow: 3,
   },
   title: {
     flexGrow: 2,
   },
 }));
 
-export default function Header() {
+
+
+export default function HeaderMain() {
   const classes = useStyles();
 
   return (
@@ -33,14 +38,20 @@ export default function Header() {
           <Typography variant="h6" className={classes.title}>
             <img src={logo} alt="logo" style={{height: "46px"}} />
             {/* <h1>GC</h1> */}
+            {/* <span>{`(min-width:600px) matches: ${mobileMenu}`}</span> */}
           </Typography>
-          <div className={classes.menuButtons}>
-            <Button>Home</Button>
-            <Button>Services</Button>
-            <Button>About Us</Button>
-            <Button>Contact Us</Button>
-          </div>
-          <UserMenu />
+          
+          {/* <UserMenu /> */}
+              
+              <div className={classes.menu} style={{marginRight: "20px"}}>
+              <Button>Home</Button>
+              <Button>Services</Button>
+              <Button>About Us</Button>
+              <Button>Contact Us</Button>
+              
+            </div>
+            <UserMenu />
+            
         </Toolbar>
       </AppBar>
     </div>
