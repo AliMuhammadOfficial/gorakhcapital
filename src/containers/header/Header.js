@@ -32,6 +32,7 @@ export default function Header() {
         <Toolbar>
           <Typography variant="h6" className={classes.title}>
             <img src={logo} alt="logo" style={{height: "46px"}} />
+            {/* <h1>GC</h1> */}
           </Typography>
           <div className={classes.menuButtons}>
             <Button>Home</Button>
