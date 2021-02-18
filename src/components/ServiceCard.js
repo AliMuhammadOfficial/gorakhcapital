@@ -18,7 +18,7 @@ const useStyles = makeStyles({
   },
 });
 
-export default function ServiceCard({cardTitle, content}) {
+export default function ServiceCard({cardTitle, content, videoUrl}) {
   const classes = useStyles();
 
   return (
@@ -29,7 +29,8 @@ export default function ServiceCard({cardTitle, content}) {
         </Typography> */}
         <Typography variant="h5" component="h2">
         
-          <FaAngular size={80} />
+          {/* <FaAngular size={80} /> */}
+          <iframe title="intro" width="100%" src={videoUrl} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen={true}></iframe>
         </Typography>
         <Typography variant="h5" component="h2">
           {cardTitle}
@@ -37,11 +38,11 @@ export default function ServiceCard({cardTitle, content}) {
         {/* <Typography className={classes.pos} color="textSecondary">
           adjective
         </Typography> */}
-        <Typography variant="body2" component="p">
+        {/* <Typography variant="body2" component="p">
           {content}
           <br />
           {'"a benevolent smile"'}
-        </Typography>
+        </Typography> */}
       </CardContent>
     </Card>
   );

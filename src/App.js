@@ -8,15 +8,19 @@ import Dashboard from './pages/Dashboard'
 import './App.css';
 import HeaderMain from './containers/headermain/HeaderMain';
 import HeaderMobile from './containers/headermobile/HeaderMobile';
+import { StyledProvider } from 'components-extra'
+
 function App() {
 
   const matches = useMediaQuery('(max-width:600px)');
 
   return (
     <div>
+      <StyledProvider>
+
       {matches ? <HeaderMobile />: <HeaderMain />}
       
-      <div>
+      <div style={matches ?{position: "relative", top: "-8px"} : {}}>
         <Router>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -24,6 +28,7 @@ function App() {
           </Routes>
         </Router>
       </div>
+    </StyledProvider>
     </div>
   );
 }
