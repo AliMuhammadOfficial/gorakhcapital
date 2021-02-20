@@ -9,8 +9,8 @@ import GlobalStyles from "./GlobalStyles";
 
 import Home from './pages/Home'
 import Dashboard from './pages/Dashboard'
-import HeaderMain from './containers/headermain/HeaderMain'
-import HeaderMobile from './containers/headermobile/HeaderMobile'
+import HeaderMain from './containers/HeaderMain'
+import HeaderMobile from './containers/HeaderMobile'
 
 import './App.css'
 

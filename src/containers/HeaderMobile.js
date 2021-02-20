@@ -10,18 +10,18 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-// import MailIcon from '@material-ui/icons/Mail';
 import MenuIcon from '@material-ui/icons/Menu';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
-import logo from "../../assets/images/gc-logo.png"
 import HomeIcon from '@material-ui/icons/Home';
 import StyleIcon from '@material-ui/icons/Style';
 import LocalLibraryIcon from '@material-ui/icons/LocalLibrary';
 import DialpadIcon from '@material-ui/icons/Dialpad';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 import LockOpenIcon from '@material-ui/icons/LockOpen';
+
+import logo from "../assets/images/gc-logo.png"
 
 const drawerWidth = 240;
 

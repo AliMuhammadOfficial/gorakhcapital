@@ -1,9 +1,9 @@
 import HeroBanner from "./HeroBanner";
-import About from "./about/About"
-import Services from "./services/Services"
-import Feedback from "./feedback/Feedback";
+import About from "./About"
+import Services from "./Services"
+import Feedback from "./Feedback";
 import Footer from "../logged_out/Footer";
-import StatsCounter from "./statscounter/StatsCounter";
+import StatsCounter from "./StatsCounter";
 
 export default function Main() {
     return (
